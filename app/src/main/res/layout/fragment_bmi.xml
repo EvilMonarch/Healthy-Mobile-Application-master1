@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingTop="16dp" android:paddingLeft="16dp" android:paddingRight="16dp">
+
+    <EditText
+        android:drawableLeft="@drawable/heightbmi"
+        android:hint="@string/height_bmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:id="@+id/heightBmi" />
+    <EditText
+        android:drawableLeft="@drawable/weightbmi"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:hint="@string/weight_bmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weightBmi" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:text="@string/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calculateBmiButton" />
+    <TextView
+        android:id="@+id/result_text_bmi"
+        android:text="No Calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:paddingTop="90dp"
+        android:paddingBottom="90dp"
+        android:textSize="20dp"/>
+    <FrameLayout android:id="@+id/bmi_view" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>

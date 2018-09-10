@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingTop="16dp" android:paddingLeft="16dp" android:paddingRight="16dp">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="230dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:drawableLeft="@drawable/person"
+        android:hint="@string/user_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_id" />
+    <EditText
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/lock"
+        android:hint="@string/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_id" />
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:id="@+id/login_button" />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:id="@+id/sign_up_button" />
+    <FrameLayout android:id="@+id/login_view" android:layout_width="match_parent" android:layout_height="match_parent"></FrameLayout>
+
+
+</LinearLayout>
